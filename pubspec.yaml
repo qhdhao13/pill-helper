@@ -1,0 +1,57 @@
+# 版权所有 (C) 2025 Pill Helper
+# 本代码遵循 AGPL-3.0 开源协议，个人非商用可自由使用、修改；商用需联系作者授权
+
+name: pill_helper
+description: 面向中老年群体的跨平台吃药提醒APP，支持离线运行、大字体、简洁操作
+publish_to: 'none' # 不发布到pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# 依赖包配置
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # SQLite数据库 - 用于本地存储药品信息和服药日志
+  sqflite: ^2.3.0
+  sqflite_common_ffi_web: ^1.0.4  # Web平台支持
+  path: ^1.8.3
+  
+  # 本地通知 - 用于实现离线提醒功能
+  flutter_local_notifications: ^17.2.0
+  timezone: ^0.9.2
+  
+  # 权限管理 - 用于请求通知权限
+  permission_handler: ^11.1.0
+  
+  # 时间处理工具
+  intl: ^0.18.1
+  
+  # 文件路径工具（用于备份功能）
+  path_provider: ^2.1.1
+  
+  # 网络请求（用于药品搜索API）
+  http: ^1.1.0
+  
+  # 图片选择和拍照
+  image_picker: ^1.0.7
+  
+  # 本地存储（用于保存用户设置）
+  shared_preferences: ^2.2.2
+  
+  # OCR文字识别（可选，用于拍照识别药品名称）
+  # google_mlkit_text_recognition: ^0.11.0  # 如果需要OCR功能
+  
+  # 图标库
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
