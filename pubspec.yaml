@@ -17,7 +17,7 @@ dependencies:
   
   # SQLite数据库 - 用于本地存储药品信息和服药日志
   sqflite: ^2.3.0
-  sqflite_common_ffi_web: ^1.0.4  # Web平台支持
+  # 移除：sqflite_common_ffi_web  # Web平台不需要，节省APK空间
   path: ^1.8.3
   
   # 本地通知 - 用于实现离线提醒功能
